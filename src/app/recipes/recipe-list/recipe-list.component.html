@@ -1,4 +1,3 @@
-<!--<app-recipe-item></app-recipe-item>-->
 <div class="row">
   <div class="col-xs-12">
     <button class="btn btn-primary">New Recipe</button>
@@ -7,8 +6,7 @@
 <hr>
 <div class="row">
   <div class="col-xs-12">
-    <app-recipe-item></app-recipe-item>
-    <!--<app-recipe-item *ngFor="let receta of recipes" [recipe]="receta"></app-recipe-item>-->
+    <app-recipe-item *ngFor="let receta of recipes" [recipe]="receta" (recipeSelected)="recetaSeleccionada(receta)"></app-recipe-item>
   </div>
 </div>
 
