@@ -13,7 +13,6 @@ export class RecipeItemComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('la receta', this.recipe);
   }
 
   onRecipeSelected() {
